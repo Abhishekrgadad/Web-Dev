@@ -5,15 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Website</title>
     <link rel="stylesheet" href="style.css">
+    <style> 
+    /* //these are style sheets */
+        /* h2{
+            background-color: skyblue;
+            color: black;
+        } */
+        h3{
+            background-color: aliceblue;
+            color: blueviolet;
+        }
+    </style>
 </head>
 <body>
-    <h1>I am started doing sigma web development course with Code with HARRY BHAI.</h1>
+    <h1> Bookmark Page</h1>
+    <p>Primary Bookmarks:</p>
+   <!-- using href links in websites and Script js.. -->
     <script src="script.js"></script>
+    <p> <a target="_blank" href="https://www.google.com">Open Google</a></p>
+    <p> <a target="_blank" href="https://www.youtube.com">Open youtube</a></p>
+    <p> <a target="_blank" href="https://www.facebook.com">Open facebook</a></p>
+    <p> <a target="_blank" href="https://www.instagram.com">Open instagram</a></p>
+
+    <!-- Using Images in the website using href tag. and Alt gives the description of the image. -->
+    <img height="220" src="car1.png" alt="Ferrari Car Image">
+
+<h2>Creating a form for sigma web dev</h2>
+<form action="post">
     <div>
-        <p>Hello this is new div created</p>
+        <label for="username"> Enter a username</label>
+        <input type="text" required value="" autofocus id="username" placeholder="Enter your name" autofocus><br><h>Gender: </h>
+        <label for="Male">Male
+        </label>
+        <input type="radio" value="Male" id="Male" name="gender">
+        <label for="Female">Female</label> 
+        <input type="radio" value="Female" id="Female" >
+
     </div>
     <div>
-        <h1>another div with heading</h1>
+        <label for="area">Description</label><br>
+        <textarea name="description" id="area" cols="30" rows="2"></textarea>
     </div>
+    
+    <div>
+        <input type="checkbox" id="check" name="subscribe">
+        <label for="check">Click to get the Newsletter</label>
+        
+    </div><br>
+    <div>
+        <button style="align-content: center;">submit</button>
+    </div>
+
+</form>
+
+
+<PRE>Display your Code like this:
+    <CODE>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+
+    </CODE>
+</PRE>
+
+//Inline style sheets
+<p style="background-color: aqua; color: black;">Hello New line sheet</p>
+<!-- used for styles internal , inline and external style sheet. -->
+<h2>This is to show style</h2>
+<h3>Another style;</h3>
+
+<!-- This is on css selectors  -->
+<div>
+    <h5>Hello i am heading inside div</h5>
+</div>
+<div>
+    <article>
+        <p> I am paragraph inside article inside div</p>
+    </article>
+</div>
+<div id="blue"> I have a id as skyblue</div>
+<div class="red">i have a class as Red class</div>
+&nbsp;
+<div>
+    <a href="https://www.google.com">Google</a>
+</div>
+
+
+
 </body>
-</html>
+</html> 
