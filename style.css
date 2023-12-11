@@ -1,0 +1,80 @@
+body{
+    background-color: aquamarine;
+}
+h5{
+    /* background-color: skyblue; */
+    color: white
+}
+/* it is used only inside div not with other ones */
+div > h5{
+    background-color: red;
+}
+
+/* You can use these always as you design for P inside anything */
+div p{
+    background-color: whitesmoke;
+    color: blue;
+}
+
+/* This is id  */
+#blue{
+    background-color: brown;
+    color: whitesmoke;
+}
+/* This is class */
+.red{
+    background-color: rgb(91, 216, 91);
+}
+/* using this it applies for whole page thats y its called as universal selector */
+*{
+    font-family:'Courier New', Courier, monospace;
+}
+/* Pseudo selectors */
+
+ a:visited{
+    color: blue;
+ }
+ a:link{
+    color: green;
+ }
+ 
+a:hover{
+    background-color: whitesmoke;
+
+}
+ 
+*{
+    padding: 0;
+    margin: 0;
+}
+div{
+    flex-flow: column;
+}
+.box{
+    background-color: aqua;
+    padding: 10px;
+    border: solid black;
+    margin: 5px;
+    box-sizing: border-box;
+    width: 150px;
+    flex-grow: inherit;
+}
+
+.box1{
+    background-color: aqua;
+    padding: 10px;
+    border: solid black;
+    margin: 5px;
+    width: 150px;
+    flex-grow: inherit;
+}
+.box2{
+    background-color: aqua;
+    padding: 10px;
+    border: solid black;
+    margin: 5px;
+    width: 150px;
+    flex-grow: inherit;
+}
+      
+ 
