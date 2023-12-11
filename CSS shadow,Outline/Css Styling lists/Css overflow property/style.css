@@ -34,3 +34,15 @@
     text-overflow: ellipsis;
 
 }
+.over{
+    width: 60vw;
+    height: 20vh;
+    border: 2px solid black;
+    overflow:scroll;
+    background-color: aqua;
+    /* white-space: nowrap; */
+    /* overflow-x: hidden;
+    overflow-y: auto; */
+    overflow: hidden auto;
+
+}
