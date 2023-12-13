@@ -4,7 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css overflow property</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        .auto{
+    width: 30vw;
+    height: 60vh;
+    border: 2px solid black;
+    overflow:auto;
+    background-color: aqua;
+
+}
+.scroll{
+    width: 70vw;
+    height: 20vh;
+    border: 2px solid black;
+    overflow:scroll;
+    background-color: aqua;
+
+}
+.nowrap{
+    width: 60vw;
+    height: 20vh;
+    border: 2px solid black;
+    overflow:scroll;
+    background-color: aqua;
+    white-space: nowrap;
+
+}
+
+.textoverflow{
+    width: 60vw;
+    height: 10vh;
+    border: 2px solid black;
+    overflow:scroll;
+    background-color: aqua;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+.over{
+    width: 60vw;
+    height: 20vh;
+    border: 2px solid black;
+    overflow:scroll;
+    background-color: aqua;
+    /* white-space: nowrap; */
+    /* overflow-x: hidden;
+    overflow-y: auto; */
+    overflow: hidden auto;
+
+}
+    </style>
 </head>
 <body>
     <h1>Overflow property :
