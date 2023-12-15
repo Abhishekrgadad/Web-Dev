@@ -27,10 +27,27 @@
             background-color: rgb(141, 178, 213);
         }
         .box::first-letter{
-               background-color:yellow;
+               color: blue;
+               font-size: x-large;
         }
         .box::first-line{
            background-color: rgb(241, 238, 235);
+        }
+        .boxes::before{
+            content: "This is before Content";
+        }
+        .boxes::after{
+            content: "This is after Content";
+        }
+        ::selection{
+            background-color: black;
+            color: yellow;
+        }
+        input:placeholder-shown{
+            background-color: rgb(213, 255, 25);
+            color: black;
+           
+            
         }
     
     </style>
@@ -42,6 +59,7 @@
         <div class="box">This is 3 box.</div>
         <div class="box">This is 4 box.</div>
         <div class="box">This is 5 box.</div>
+        <input type="text" placeholder="Hello input please.....">
     </div>
 </body>
 </html>
