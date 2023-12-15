@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 10px;
+        }
+        .boxes{
+            border: 2px solid black;
+
+
+        }
+        .box{
+            border: 1px solid skyblue;
+            width: 200px;
+            height: 10vh;
+            background-color: beige;
+        }
+        .box:nth-child(1){
+            background-color: aqua;
+        }
+        .box:nth-child(2){
+            background-color: rgb(141, 178, 213);
+        }
+        .box::first-letter{
+               background-color:yellow;
+        }
+        .box::first-line{
+           background-color: rgb(241, 238, 235);
+        }
+    
+    </style>
+</head>
+<body><DIV>Selectors List</DIV>
+    <div class="boxes">
+        <div class="box">This is 1 box.</div>
+        <div class="box">This is 2 box.</div>
+        <div class="box">This is 3 box.</div>
+        <div class="box">This is 4 box.</div>
+        <div class="box">This is 5 box.</div>
+    </div>
+</body>
+</html>
