@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animations</title>
+    <style>
+        .container{
+            background-color: rgb(35, 195, 195);
+            height: 30vh;
+            width: 40vw;
+           
+
+        }
+        .box{
+            /* background-color:rgb(46, 45, 68); */
+            color: aliceblue;
+            height: 10vh;
+            width: 10vw;
+            animation-name: harrybhai;
+            animation-duration: 3s;
+            animation-iteration-count:infinite;
+            animation-timing-function: ease-out;
+            animation-delay: 2s;
+
+        
+                
+        }
+        @keyframes harrybhai {
+            from{ background-color: red;
+
+            }
+            to{ background-color:skyblue;
+                transform: translateX(300px);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+      <h1>Box</h1>
+        </div>
+    </div>
+</body>
+</html>
