@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-Cover & Fit</title>
+    <style>
+           .container{
+            /* here you can also put the image as the background image for the container. so it looks like image only but not available as the real uploaded image. 
+            you can also adjust the image properties same as the image properties. */
+            height: 320px;
+            width: 320px;
+            background-color: aqua;  
+            /* background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.A-CkBDADakb00xNdaX0QIgHaE8%26pid%3DApi&f=1&ipt=6e1c104314f6c7242295695001876a41e8bd50f2fceb06f500d89f3c821cc055&ipo=images); */
+          
+            background-position: center center;
+            background-position: right top;
+            
+           }
+           img
+           { 
+            /* Here you can able to adjust the image exactly within the container using some object-fit property.
+            contain--fits with original aspect ratio bt leave space top and bottom of the image.
+            cover--fits the container correctly but a part of the image is cut.
+            you can use object-postion: right top , right bottom to adjust the image as you want so. */
+            height: 320px;
+            width: 320px;
+            /* object-fit:contain; */
+            object-fit: cover;
+            /* object-position:left top; */
+            /* object-position: left bottom;
+            object-position: right top;
+            object-position: right bottom; */
+            /* object-position: left top; */
+            /* object-fit: scale-down; */
+            /* object-position: 10px 20px; */
+           }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.A-CkBDADakb00xNdaX0QIgHaE8%26pid%3DApi&f=1&ipt=6e1c104314f6c7242295695001876a41e8bd50f2fceb06f500d89f3c821cc055&ipo=images" alt="">
+  
+    </div>
+</body>
+</html>
