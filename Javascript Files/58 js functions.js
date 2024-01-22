@@ -11,12 +11,13 @@ console.log("Javascript functions")
 
 // func(" sujay ")
 
-function sum(a , b)
-{
-    console.log("Sum of two is :"+ (a+b))
-    console.log("difference of two no. is: " + (a-b))
-    console.log("Product of two no.is :"+(a*b))
-    console.log("Remainder of two no. is :"+(a%b))
-}
+// function sum(a , b)
+// {
+//     console.log("Sum of two is :"+ (a+b))
+//     console.log("difference of two no. is: " + (a-b))
+//     console.log("Product of two no.is :"+(a*b))
+//     console.log("Remainder of two no. is :"+(a%b))
+// }
 
-sum(2,4)
+// sum(2,4)
+
