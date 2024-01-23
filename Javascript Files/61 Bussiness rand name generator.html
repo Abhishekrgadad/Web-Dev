@@ -1,0 +1,26 @@
+
+// THIS IS RANDOM BUSINESS NAME GENERATOR BY TAKING INPUT FORM USER USES RANDOM GENERATOR COMPARE VALUES TO GIVE THE SPECIFIED NAMES..
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business name Generator</title>
+</head>
+<body>
+    <h1> Business name generator</h1>
+    <script>
+        alert("Business Name generator")
+        let a = prompt("Enter your domain name")
+        let b = prompt("Enter your favourite word to include")
+        let c = prompt("Enter the adjective you like")
+        let rand = Math.random()
+        if( rand < 0.33)
+           alert(`Your Brand name is : ${b}${c}`)
+        else if( rand < 0.66 && rand > 0.33)
+            alert(`Your Brand Name is : ${b}${a}`)
+        else
+            alert(`Your Brand Name is : ${a}${c}` )
+    </script>
+</body>
+</html>
