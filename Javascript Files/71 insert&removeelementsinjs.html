@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert and Delete in Javascript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1> this is the box</h1>
+            <h2> this is second box</h2>
+            <h2>this is third one </h2>
+        </div>
+    </div>
+    <script>
+        let div = document.createElement("div")
+        div.innerHTML = " hello harry here bhai"
+        div.setAttribute("class" , "createdby");
+        document.querySelector(".container").append(div)
+
+        let div = document.createElement("div")
+        div.innerHTML = "this is new box";
+        div.setAttribute("class" , "formedby")
+        document.querySelector(".box").append(div)
+     
+    
+
+    </script>
+</body>
+</html> 
