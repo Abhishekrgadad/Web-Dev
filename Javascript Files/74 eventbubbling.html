@@ -11,7 +11,7 @@
             margin: 20px;
             padding: 20px;
         }
-        .containerchild{
+        .childcontainer{
             background-color: antiquewhite;
             border: 2px solid red;
             margin: 20px;
@@ -52,6 +52,17 @@ e.stopPropagation()
             e.stopPropagation()
             alert("Child is clicked")
         })
+
+        function getrandomcolor(){
+            let val1 = Math.ceil(0 + Math.random() * 255)
+            let val2 = Math.ceil( 0 + Math.random() * 255)
+            let val3 = Math.ceil( 0 + Math.random() * 255)
+            return `rgb(${val1} , ${val2} , ${val3})`
+        }
+
+        setInterval(() => {
+            document.querySelector(".childcontainer").style.background = getrandomcolor();
+        }, 1000);
     </script>
 </body>
 </html>
