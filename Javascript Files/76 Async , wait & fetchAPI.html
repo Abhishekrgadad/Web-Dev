@@ -1,50 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    //Async and await function are used to continue the execution of the task in the system without waiting for the other tasks.
-    //so that using await function inside the sync main fuction the task waits until it gets the load data.
+  </head>
+  <body>
+    <!-- //Async and await function are used to continue the execution of the task in
+    the system without waiting for the other tasks. //so that using await
+    function inside the sync main fuction the task waits until it gets the load
+    data. -->
     <script>
-        function getData(){
-            return new Promise((resolve , reject)=>
-            {
-                setTimeout(() => {
-                    resolve(455)
-                }, 3000);
-            })
-        }
+      function getData() {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve(455);
+          }, 3000);
+        });
+      }
 
-        console.log("loading modules")
+      console.log("loading modules");
 
-        console.log("Do something else")
-        
-        console.log("Load data")
+      console.log("Do something else");
 
-        let data = getData()
-        data.then((v) =>{
-            console.log(data)
-            console.log("Process data")
-            console.log("data has been loaded successfully")
-        })
-        
+      console.log("Load data");
 
-
-
-
-
-
-
-
-
-
-
-
-
-        
+      let data = getData();
+      data.then((v) => {
+        console.log(data);
+        console.log("Process data");
+        console.log("data has been loaded successfully");
+      });
     </script>
-</body>
+  </body>
 </html>
