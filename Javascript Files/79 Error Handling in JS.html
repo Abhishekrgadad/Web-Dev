@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Enter a number")
+        let b = prompt("Enter another number")
+
+        if(isNaN(a)|| isNaN(b))
+           throw SyntaxError("Enter the valid inputs")
+       
+            let sum = parseInt(a)+parseInt(b);
+        try {
+            console.log("The result is "+ sum*x)
+        } catch (error) {
+            console.log("there is something error in the output")
+        }
+        finally{
+            console.log("db is closed temporary")
+        }
+// //Whether any of the try or catch executes the finally executeds always.
+// //mainly finally is used in functions where after a try and catch there is a return true or false. 
+// so that after any one of the execution it stops the execution and comes out. there finally could get executed. so that finally is used in function to know about the flows.
+
+
+    </script>
+</body>
+</html>
